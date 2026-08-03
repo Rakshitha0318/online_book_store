@@ -45,3 +45,4 @@ wrapt==2.0.1
 fastapi
 uvicorn[standard]
 sqlmodel==0.0.24
+email-validator
