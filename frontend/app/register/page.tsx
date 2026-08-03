@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import api from "../lib/api";
+import { useRouter } from "next/navigation";
 
 export default function RegisterPage() {
   const [form, setForm] = useState({
@@ -9,6 +10,7 @@ export default function RegisterPage() {
     email: "",
     password: "",
   });
+    const router = useRouter();
 
   const register = async () => {
     try {
